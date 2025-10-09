@@ -1,0 +1,17 @@
+table, td, th {
+    border-collapse: collapse;
+}
+
+table {
+    width: 300px;
+}
+
+td {
+    padding-left: 4px;;
+}
+
+
+* {
+    font-family: 'Nunito', Arial, sans-serif;
+}
+
