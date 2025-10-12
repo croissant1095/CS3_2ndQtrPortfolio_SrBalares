@@ -4,6 +4,7 @@ table, td, th {
 
 table {
     width: 300px;
+    margin-bottom: 30px;
 }
 
 td {
@@ -15,3 +16,22 @@ td {
     font-family: 'Nunito', Arial, sans-serif;
 }
 
+img {
+    width: 280px;
+    height: auto;
+    border-radius: 3px;
+    border: 1.5px solid black;
+}
+
+.hi {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hi img,
+.hi iframe {
+    padding: 1px;
+}
