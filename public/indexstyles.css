@@ -4,14 +4,24 @@
 }
 
 .navs {
-    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
-div {
+.nav_list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+header h1 {
     text-align: center;
 }
 
-div h2 {
+header h2 {
+    text-align: center;
     font-style: italic;
 }
 
