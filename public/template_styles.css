@@ -1,0 +1,29 @@
+body {
+    font-family: 'Nunito', Arial, sans-serif;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+.nav_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+  }
+
+.social_list {
+    list-style: none;
+    margin: 0 0 8px 0;
+    padding: 0;
+    display: flex;
+    gap: 12px;
+}
