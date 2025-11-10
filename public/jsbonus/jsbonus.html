@@ -24,16 +24,20 @@
             <p>this is just an ordinary site</p>
             <p>what you looking at?</p>
             <p id="woahhh"></p>
+            <a id="yo"></a>
         </main>
 
         <script>
             const colors = ["blue", "green", "red", "orange", "pink", "gray"]
             document.body.onclick = changeColor
             const woah = document.getElementById("woahhh")
+            const yo = document.getElementById("yo")
             function changeColor() {
                 const num = Math.floor(Math.random() * colors.length)
                 document.body.style.backgroundColor = colors[num]
                 woah.innerHTML = "what are you doinnnnnnnggggggg"
+                yo.innerHTML = "go here now :)"
+                yo.href = "https://croissant1095.github.io/CS3_2ndQtrPortfolio_SrBalares/public/jsbonus/activity2.html"
             }
         </script>
     </body>
