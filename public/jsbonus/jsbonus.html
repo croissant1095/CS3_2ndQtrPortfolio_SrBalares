@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Ryan Gavin Balares">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+        <meta name="description" content="A simple Grade 9 template.">
+        <link rel="stylesheet" href="home.css">
+        <title>A Website</title>
+    </head>
+
+    <body>
+        <header>
+        <nav>
+            <ul class="nav_list">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <main>
+            <h1>Welcome Here!</h1>
+            <p>this is just an ordinary site</p>
+            <p>what you looking at?</p>
+            <p id="woahhh"></p>
+        </main>
+
+        <script>
+            const colors = ["blue", "green", "red", "orange", "pink", "gray"]
+            document.body.onclick = changeColor
+            const woah = document.getElementById("woahhh")
+            function changeColor() {
+                const num = Math.floor(Math.random() * colors.length)
+                document.body.style.backgroundColor = colors[num]
+                woah.innerHTML = "what are you doinnnnnnnggggggg"
+            }
+        </script>
+    </body>
+</html>

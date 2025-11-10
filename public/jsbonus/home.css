@@ -1,0 +1,54 @@
+
+body {
+    font-family: 'Nunito', Arial, sans-serif;
+    margin: 0;
+    transition: background-color 0.41s;
+  }
+
+header {
+    background-color: rgb(42, 45, 58);
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: rgb(42, 45, 58);
+    padding: 15px;
+    }
+
+.nav_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 12px;
+    overflow: hidden;
+    background-color: rgb(42, 45, 58);
+     
+}
+
+.nav_list li a {
+    display: block;
+    background-color: rgb(42, 45, 58);
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(184, 184, 184)
+}
+  
+
+main {
+    margin-left: 6.7px;
+}
+
+
+
+
+
