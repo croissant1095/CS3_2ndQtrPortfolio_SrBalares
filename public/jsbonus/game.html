@@ -67,6 +67,48 @@
 
         <main>
             <h1>Welcome here!</h1>
+            <p>Now type this:</p>
+            <p id="letter"></p>
+            <p id="comment"></p>
+            <p id="streak">Streak: </p>
+
+            <script>
+                const startingLetter = getRandomLetter()
+                let currentLetter = startingLetter
+                const letterText = document.getElementById("letter")
+                const streak = document.getElementById("streak")
+                const comment = document.getElementById("comment")
+                let currentStreak = 0
+                streak.innerHTML = "Streak: " + currentStreak
+                letterText.innerHTML = currentLetter
+                document.body.onkeypress = checkKey
+
+                function checkKey() {
+                    const key = event.key
+                    if (key.toLowerCase() == currentLetter.toLowerCase()) {
+                        currentStreak++
+                        comment.innerHTML = "yay"
+                        streak.innerHTML = "Streak: " + currentStreak
+                        getNewLetter()
+                    }
+                    else {
+                        currentStreak = 0
+                        streak.innerHTML = "Streak: " + currentStreak
+                        comment.innerHTML = "aww"
+                        getNewLetter()
+                    }
+                }
+
+                function getNewLetter() {
+                    currentLetter = getRandomLetter()
+                    letterText.innerHTML = currentLetter
+                }
+                function getRandomLetter() {
+                    const randomNumber = Math.floor(Math.random() * 26);
+                    const asciiCode = randomNumber + 97;
+                    return String.fromCharCode(asciiCode);
+                }
+            </script>
         </main>
     </body>
 </html>
