@@ -68,12 +68,19 @@ img {
     align-items: center;
   }
   
-  .hi img,
-  .hi iframe {
-      padding: 1px;
-  }
+.hi img, .hi iframe {
+    padding: 1px;
+}
+
+img {
+    transition-duration: 0.9s;
+}
+img:hover, iframe:hover {
+    transform: scale(1.1);
+}
 
 iframe {
     border-radius: 20px;
+    transition: 0.9s;
 }
 

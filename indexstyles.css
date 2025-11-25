@@ -1,6 +1,6 @@
 * {
     font-family: 'Nunito', Arial, sans-serif;
-    background-color: #96adad;
+    background-color: azure;
 }
 
 .navs {
@@ -16,11 +16,13 @@
     gap: 26px;
 }
 
-header h1 {
-    text-align: center;
+h1 {
+    color: midnightblue;
+    font-family:'Courier New', Courier, monospace;
 }
 
 header h2 {
+    color: midnightblue;
     text-align: center;
     font-style: italic;
 }
@@ -36,6 +38,12 @@ header h2 {
 img {
     width: 280px;
     padding-top: 1px;
+    transition-duration: 0.9s;
+    margin-left: 10px;
+}
+
+img:hover {
+    transform: scale(1.1);
 }
 
 
